@@ -1,0 +1,5 @@
+FROM openjdk:8-jre-slim
+WORKDIR /home
+COPY /home/tomcat/microservices/emision/propuestas/rus-ms-emision-propuestas.jar rus-ms-emision-propuestas.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "spring-h2-demo.jar"]
