@@ -6,8 +6,8 @@ services:
     image: rusdocker/postgres-5051:latest
     restart: always
     environment:
-      POSTGRES_USER: sonar
-      POSTGRES_PASSWORD: sonar
+      POSTGRES_USER: #user
+      POSTGRES_PASSWORD: #pass
       PGDATA: /var/lib/postgresql/data
     volumes:
       - ./db-data:/var/lib/postgresql/data
@@ -23,8 +23,8 @@ services:
     user: sonarqube:sonarqube
     environment:
       SONAR_JDBC_URL: jdbc:postgresql://db:5432/sonar
-      SONAR_JDBC_USERNAME: sonar
-      SONAR_JDBC_PASSWORD: sonar
+      SONAR_JDBC_USERNAME: #user
+      SONAR_JDBC_PASSWORD: #pass
     volumes:
       - ./sonarqube_data:/opt/sonarqube/data
       - ./sonarqube_extensions:/opt/sonarqube/extensions
@@ -39,8 +39,8 @@ services:
     restart: always
     user: pgadmin:pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: soportedesarrollo@riouruguay.com.ar
-      PGADMIN_DEFAULT_PASSWORD: sonar
+      PGADMIN_DEFAULT_EMAIL: #mail
+      PGADMIN_DEFAULT_PASSWORD: #pass
       PGADMIN_LISTEN_PORT: 80
     ports:
       - "5050:80"
