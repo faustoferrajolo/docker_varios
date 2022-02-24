@@ -11,7 +11,7 @@ PASOS
 
 Se puede revertir los cambios ejecutando delete_all.sh
 
-'''init.sh
+init.sh
 
 #!/bin/bash
 
@@ -38,7 +38,7 @@ cd sonarqube_extensions/plugins
 wget https://binaries.sonarsource.com/Distribution/sonar-auth-bitbucket-plugin/sonar-auth-bitbucket-plugin-1.1.0.381.jar
 
 
-'''delete_all.sh
+delete_all.sh
 
 #!/bin/bash
 
