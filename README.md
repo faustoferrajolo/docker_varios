@@ -3,7 +3,11 @@
 
 PASOS
 
-1- sudo sysctl -w vm.max_map_count=262144
+1- sysctl -w vm.max_map_count=262144
+   sysctl -w fs.file-max=65536
+   ulimit -n 65536
+   ulimit -u 65536
+
 2- ./init.sh
 3- chown -R pgadmin:pgadmin pgadmin-data
    chown -R postgres:postgres db-data
