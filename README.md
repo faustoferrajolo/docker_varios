@@ -4,12 +4,16 @@
 PASOS
 
 1- sysctl -w vm.max_map_count=262144
+
 2- sysctl -w fs.file-max=65536
+
 3- ulimit -n 65536
+
 4- ulimit -u 65536
 
-2- ./init.sh
-3- chown -R pgadmin:pgadmin pgadmin-data
+5- ./init.sh
+
+6- chown -R pgadmin:pgadmin pgadmin-data
    chown -R postgres:postgres db-data
    chown -R sonarqube:sonarqube sonarqube_*
 
