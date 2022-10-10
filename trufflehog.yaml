@@ -1,0 +1,29 @@
+skip_strings:
+    package-lock.json:
+      - "integrity"
+    yarn.lock:
+      - "integrity"
+      - "resolved"
+    glide.lock:
+      - "version"
+      - "hash"
+
+
+skip_paths:
+    - secrets_config.json
+    - .git/*
+    - repository/org/apache/logging/log4j/log4j/2.11.1/log4j-2.11.1.pom
+    - repository/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+    - go/src/gopkg.in/mgo.v2/*
+    - __test__/*
+    - /test/utils/FormatPrintReceipt.test.js
+    - /test/services/paymentService.handleBillReceipt.test.js
+    - /test/lib/FormatPrintReceipt.test.js
+    - /test/*
+    - /node_modules/*
+    - /src/services/*
+    - /src/*
+    - /coverage/*
+    - /package-lock.json
+    - /package.json
+    - /app/package-lock.json
