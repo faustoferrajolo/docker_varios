@@ -66,7 +66,7 @@ docker-compose up -d
 
 
 
-#Trufflehog
+# Trufflehog
 
 - trufflehog3 -f json --no-history --config ./trufflehog.yaml --rules ./trufflehog_secrets_config.json ./repo_path
   
