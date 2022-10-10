@@ -63,3 +63,11 @@ groupdel -f sonarqube
 
 Correr docker compose
 docker-compose up -d
+
+
+
+#Trufflehog
+
+- trufflehog3 -f json --no-history --config ./trufflehog.yaml --rules ./trufflehog_secrets_config.json ./repo_path
+  
+
